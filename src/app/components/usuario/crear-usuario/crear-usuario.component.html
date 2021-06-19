@@ -1,0 +1,81 @@
+<br>
+<div class="text-center py-3">
+  <h1> Agregar Usuario</h1>
+  </div>
+   <form class="form-center">
+      <div class="form-group">
+        <div class="input-group">
+           <div class="input-group-prepend" style="width: 50%">
+             <div class="input-group-text bg-white">
+              <i class="fa fa-user"></i>
+             </div>
+           <input name="nombre" type="text" class="form-control" placeholder="Nombre" [(ngModel)]="nombre" autofocus>
+         </div>
+      </div>
+    </div>
+</form>
+
+   <form>
+      <div class="form-group">
+        <div class="input-group">
+           <div class="input-group-prepend" style="width: 50%">
+             <div class="input-group-text bg-white">
+              <i class="fa fa-user"></i>
+             </div>
+           <input name="apellido" type="text" class="form-control" [(ngModel)]="apellido" placeholder="Apellido">
+         </div>
+      </div>
+    </div>
+</form>
+
+<form>
+  <div class="form-group">
+    <div class="input-group">
+       <div class="input-group-prepend" style="width: 50%">
+         <div class="input-group-text bg-white">
+          <i class="fa fa-envelope"></i>
+         </div>
+       <input name="email" type="text" class="form-control" [(ngModel)]="email" placeholder="Email">
+     </div>
+  </div>
+</div>
+</form>
+
+<form>
+  <div class="form-group">
+    <div class="input-group">
+       <div class="input-group-prepend" style="width: 50%">
+         <div class="input-group-text bg-white">
+          <i class="fa fa-phone"></i>
+         </div>
+       <input name="telefono"  type="text" class="form-control" [(ngModel)]="telefono" placeholder="Telefono">
+     </div>
+  </div>
+</div>
+</form>
+
+<form>
+  <div class="form-group">
+    <div class="input-group">
+       <div class="input-group-prepend" style="width: 50%">
+         <div class="input-group-text bg-white">
+          <i class="fa fa-toggle-on"></i>
+         </div>
+       <input name="estado" type="number" class="form-control" [(ngModel)]="estado" placeholder="Estado">
+     </div>
+  </div>
+</div>
+</form>
+
+<br>
+<mat-card-actions>
+    <button mat-raised-button color="warn" mattooltip="df" type="button" (click)="cancel()" style="margin-right: 10px;">
+        <i class='fa fa-times fa-fw'></i> Cancel
+    </button>
+
+    <button mat-raised-button color="accent" class="marginButton" type="submit" (click)="create()">
+        <i class='fa fa-save fa-fw'></i> Save
+    </button>
+</mat-card-actions>
+<br>
+<br>

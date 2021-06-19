@@ -1,0 +1,27 @@
+<br>
+<br>
+<h1>Crear tipo de Servicio</h1>
+<form name="myForm">
+<div class="form-group">
+    <mat-label>Descripcion: </mat-label><tr></tr>
+    <input name="descripcion" type="text" class="form-control" [(ngModel)]="descripcion">
+
+    <mat-label>tipo: </mat-label><tr></tr>
+    <input name="tipo" type="text" class="form-control" [(ngModel)]="tipo">
+
+</div>
+</form>
+<br>
+<br>
+
+<mat-card-actions>
+    
+
+    <button mat-raised-button color="warn" mattooltip="df" type="button" (click)="cancel()" style="margin-right: 10px;">
+        <i class='fa fa-times fa-fw'></i> Cancel
+    </button>
+
+    <button mat-raised-button color="accent" class="marginButton" mattooltip="df" type="button" (click)="create()">
+        <i class='fa fa-save fa-fw'></i> Save
+    </button>
+</mat-card-actions>
